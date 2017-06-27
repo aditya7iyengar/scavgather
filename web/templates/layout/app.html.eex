@@ -4,13 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A small gift for Susan">
-    <meta name="author" content="Adi Iyengar">
-    <%= if user = @conn.assigns[:user] do %>
-      <%= tag :meta, name: "channel_token", content: Phoenix.Token.sign(@conn, "user", user.id) %>
-    <% end %>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>ScavGather!</title>
+    <title>Hello Scavgather!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 

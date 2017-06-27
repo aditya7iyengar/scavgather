@@ -36,7 +36,7 @@ defmodule Scavgather.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_scavgather_key",
-    signing_salt: "AfH03nm5"
+    signing_salt: "cacJCvkV"
 
   plug Scavgather.Router
 end

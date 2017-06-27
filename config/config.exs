@@ -12,7 +12,7 @@ config :scavgather,
 # Configures the endpoint
 config :scavgather, Scavgather.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "60aBd0dyDBcLX9bZfluwd/RjaExhsYnikBORleUMC6XZpO3TktmQ2kh4/xG4/d9x",
+  secret_key_base: "3S4Eoo7V9OD9BmzZjXkVpBvfrUUDHBJ+GlxxZg5zXmmAhngzpOhWY//FGUiAccYx",
   render_errors: [view: Scavgather.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Scavgather.PubSub,
            adapter: Phoenix.PubSub.PG2]
