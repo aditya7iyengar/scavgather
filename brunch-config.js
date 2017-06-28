@@ -54,7 +54,18 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/web\/static\/vendor/]
-    }
+    },
+    sass: {
+      options: {
+        includePaths: [
+          'node_modules/'
+        ]
+      }
+    },
+    vue: {
+      extractCSS: true,
+      out: 'priv/static/css/components.css'
+    } 
   },
 
   modules: {
@@ -64,6 +75,9 @@ exports.config = {
   },
 
   npm: {
-    enabled: true
+    enabled: true,
+    aliases: {
+      vue: 'vue/dist/vue.common.js'
+    }
   }
 };
