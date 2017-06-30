@@ -17,6 +17,9 @@ defmodule Scavgather.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/questions", QuestionController
+    get "/questions/:id/answer", QuestionController, :answer
+    get "/questions/:id/reward", QuestionController, :reward
   end
 
   # Other scopes may use custom stacks.
