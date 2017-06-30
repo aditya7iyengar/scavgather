@@ -1,1 +1,12 @@
 /* This file is for your main application css. */
+.jumbotroni:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url('/images/IMG_1552.JPG');
+    opacity: 0.2;
+}
