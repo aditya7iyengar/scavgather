@@ -7,19 +7,29 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Scavgather!</title>
+    <title>Scavgather!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <!-- materialize -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <%# <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script> %>
+    <!-- materialize -->
   </head>
 
   <body>
-    <div class="container">
       <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
+        <div class="navbar-fixed">
+          <nav>
+            <a href="/" class="brand-logo"><i class="material-icons">loyalty</i>SCAVGATHER!!</a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <%= link to: question_path(@conn, :show, @question) do %>
+                  <i class="material-icons left">play_circle_filled</i>
+                <% end %>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
@@ -29,7 +39,6 @@
         <%= render @view_module, @view_template, assigns %>
       </main>
 
-    </div> <!-- /container -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

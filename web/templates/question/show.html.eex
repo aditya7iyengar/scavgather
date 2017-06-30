@@ -1,0 +1,15 @@
+<div class="question">
+  <h2>Question: <%= @question.id %></h2>
+
+  <h3><strong><%= @question.prompt %></strong></h3>
+
+  <%= if @question.pic do %>
+    <img style="position:relative;top:-13px;right:15px" height="800" width="1200" src="<%= static_path(@conn, "/images/#{@question.pic}") %>">
+  <% end %>
+
+  <div class="answer">
+    <%= if @extra != :last do %>
+      <%= render "answer_form.html", question: @question, conn: @conn %>
+    <% end %>
+  </div>
+</div>

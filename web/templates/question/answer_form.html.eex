@@ -1,0 +1,9 @@
+<%= form_for @conn, question_path(@conn, :answer, @question), [as: :answer, method: :get], fn f -> %>
+  <div class="form-group">
+    <%= label f, :answer, class: "control-label" %>
+    <%= text_input f, :answer, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= submit "Submit", class: "btn" %>
+  </div>
+<% end %>
