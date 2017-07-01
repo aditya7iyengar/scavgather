@@ -16,12 +16,8 @@
     "brunch": "2.7.4",
     "clean-css-brunch": "~2.0.0",
     "css-brunch": "~2.0.0",
-    "sass-brunch": "^2.6.3",
     "tachyons": "^4.6.2",
     "javascript-brunch": "~2.0.0",
-    "uglify-js-brunch": "~2.0.1",
-    "vue": "^2.1.10",
-    "vue-brunch": "^2.0.0",
-    "vue-resource": "^1.1.0"
+    "uglify-js-brunch": "~2.0.1"
   }
 }
